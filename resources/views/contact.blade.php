@@ -9,8 +9,8 @@
 </head>
 <body>
 
-<h1>Welcome</h1>
-<a href="/about">About Us</a>
+<h1>Contact</h1>
+<a href="/welcome">Welcome</a>
 
 </body>
 </html>
