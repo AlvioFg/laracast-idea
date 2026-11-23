@@ -1,16 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us</title>
-</head>
-<body>
+<x-layout>
+    <h1>Contact</h1>
 
-<h1>Contact</h1>
-<a href="/welcome">Welcome</a>
+    <div>
+        <p>Placeholder for contact fom</p>
+    </div>
 
-</body>
-</html>
+    <a href="/welcome">Return to Home</a>
+</x-layout>
