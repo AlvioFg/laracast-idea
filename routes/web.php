@@ -2,8 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/', function () {
+    return view('welcome', [
+        'tasks' => [
+            'Ngerjain Tugas',
+            'Main Game',
+            'Tidur',
+            'Nyari Uang'
+        ]
+    ]);
 });
 
 Route::get('/about', function () {

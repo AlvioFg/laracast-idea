@@ -1,8 +1,8 @@
 <x-layout>
-
-    <h1>Welcome</h1>
-    <a href="/about">About Us</a>
-    <a href="/welcome">Home</a>
-    <a href="/contact">Contact</a>
+    @forelse ($tasks as $task)
+        <h1>{{ $task }}</h1>
+    @empty
+        <p>There are no active tasks.</p>
+    @endforelse
 
 </x-layout>

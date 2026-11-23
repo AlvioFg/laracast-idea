@@ -1,6 +1,6 @@
 <x-layout>
 
     <h1>About Us</h1>
-    <a href="/welcome">Home</a>
+    <a href="/">Home</a>
 
 </x-layout>
