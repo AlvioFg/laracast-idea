@@ -19,7 +19,7 @@
 
         <ul class="mt-6">
             @foreach($ideas as $idea)
-                <li> {{ $idea }} </li>
+                <li class="text-sm"> {{ $idea }} </li>
             @endforeach
         </ul>
     </div>
