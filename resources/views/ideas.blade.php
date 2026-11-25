@@ -14,4 +14,14 @@
         </div>
     </form>
 
+    <div>
+        <h2>Your Ideas</h2>
+
+        <ul>
+            @foreach($ideas as $idea)
+                <li> {{ $idea }} </li>
+            @endforeach
+        </ul>
+    </div>
+
 </x-layout>

@@ -3,9 +3,15 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('ideas');
+    $ideas = session()->get('ideas');
+
+    return view('ideas', [
+        'ideas' => $ideas,
+        ]);
 });
 
-Route::post('/ideas', function () {
-    return dd('Hello');
+Route::post('/ideas', function (Request $request){
+    $request->session()->put('ideas', $request->input());
+
+    return redirect('/');
 });
