@@ -9,7 +9,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title }}</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.sdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         nav > a {
             color: red;
@@ -25,7 +25,7 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-700 p-6 max-w-xl mx-auto">
 
 <nav>
     <a href="/about">About Us</a>
