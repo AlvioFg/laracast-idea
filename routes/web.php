@@ -18,7 +18,7 @@ Route::post('/ideas', function (){
     return redirect('/');
 });
 
-Route::get('/delete-idea', function (){
+Route::get('/delete-ideas', function (){
     session()->forget('ideas');
 
     return redirect('/');
