@@ -11,10 +11,6 @@
     <title>{{ $title }}</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        nav > a {
-            color: red;
-        }
-
         .max-w-400 {
             max-width:400px;
             margin: auto;
@@ -27,11 +23,6 @@
 </head>
 <body class="bg-gray-700 p-6 max-w-xl mx-auto">
 
-<nav>
-    <a href="/about">About Us</a>
-    <a href="/">Home</a>
-    <a href="/contact">Contact</a>
-</nav>
 
 {{ $slot }}
 
