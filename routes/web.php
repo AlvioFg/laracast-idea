@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $ideas = session()->get('ideas');
+    $ideas = session()->get('ideas', []);
 
     return view('ideas', [
         'ideas' => $ideas,

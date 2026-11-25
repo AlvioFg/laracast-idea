@@ -14,8 +14,8 @@
         </div>
     </form>
 
-    <div>
-        <h2>Your Ideas</h2>
+    <div class="mt-6 text-white">
+        <h2 class="font-bold">Your Ideas</h2>
 
         <ul>
             @foreach($ideas as $idea)
