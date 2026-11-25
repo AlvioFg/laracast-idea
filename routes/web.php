@@ -10,8 +10,10 @@ Route::get('/', function () {
         ]);
 });
 
-Route::post('/ideas', function (Request $request){
-    $request->session()->put('ideas', $request->input());
+Route::post('/ideas', function (){
+    $idea = request('idea');
+
+    session()->push('ideas', $idea);
 
     return redirect('/');
 });
