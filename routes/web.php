@@ -6,7 +6,9 @@ Route::get('/', function () {
 
     $ideas = DB::table('ideas')->get();
 
-    return $ideas;
+    return view('ideas', [
+        'ideas' => $ideas,
+        ]);
 });
 
 Route::post('/ideas', function (){
