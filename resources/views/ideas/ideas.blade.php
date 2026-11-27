@@ -8,11 +8,7 @@
             @foreach($ideas as $idea)
                 <div class="card bg-primary text-primary-content w-96">
                     <div class="card-body">
-                        <h2 class="card-title">Card title!</h2>
-                        <p><a href="/ideas/{{$idea->id}}" class="text-sm"> {{ $idea->description}}</a></p>
-                        <div class="card-actions justify-end">
-                            <button class="btn">Edit</button>
-                        </div>
+                        <h2 class="card-title hover:underline"><a href="/ideas/{{ $idea->id }}">{{ $idea->description }}</a></h2>
                     </div>
                 </div>
             @endforeach
