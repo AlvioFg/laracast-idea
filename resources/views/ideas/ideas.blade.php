@@ -4,7 +4,7 @@
 
         <h2 class="font-bold">Your Ideas</h2>
 
-        <ul class="mt-6">
+        <ul class="mt-6 grid grid-cols-2 gap-9">
             @foreach($ideas as $idea)
                 <div class="card bg-primary text-primary-content w-96">
                     <div class="card-body">
