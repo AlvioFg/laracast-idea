@@ -11,7 +11,7 @@
                         <h2 class="card-title">Card title!</h2>
                         <p><a href="/ideas/{{$idea->id}}" class="text-sm"> {{ $idea->description}}</a></p>
                         <div class="card-actions justify-end">
-                            <button class="btn">Buy Now</button>
+                            <button class="btn">Edit</button>
                         </div>
                     </div>
                 </div>

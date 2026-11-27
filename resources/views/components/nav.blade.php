@@ -18,7 +18,7 @@
                 <li><a>Item 3</a></li>
             </ul>
         </div>
-        <a class="btn btn-ghost text-xl">Idea</a>
+        <a href="/" class="btn btn-ghost text-xl">Idea</a>
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">

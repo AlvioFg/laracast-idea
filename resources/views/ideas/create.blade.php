@@ -2,9 +2,9 @@
     <form method="POST" action="/ideas">
         @csrf
         <div class="col-span-full">
-            <label for="idea" class="block text-sm/6 font-medium text-white">New Ideas</label>
+            <label for="description" class="block text-sm/6 font-medium text-white">New Ideas</label>
             <div class="mt-2">
-                <textarea id="idea" name="idea" rows="3" class="block w-full rounded-md bg-white/5 px-3 text-white font-light"></textarea>
+                <textarea id="description" name="description" rows="3" class="block w-full rounded-md bg-white/5 px-3 text-white font-light"></textarea>
 
                 <x-error name="description"/>
             </div>

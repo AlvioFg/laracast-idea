@@ -36,7 +36,7 @@ class IdeaController extends Controller
             'description' => ['required', 'min:3'],
         ]);
         Idea::create([
-            'description' => request('idea'),
+            'description' => request('description'),
             'state' => 'pending',
         ]);
 
