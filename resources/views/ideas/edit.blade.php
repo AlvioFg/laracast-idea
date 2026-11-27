@@ -20,8 +20,6 @@
         </div>
 
     </form>
-
-
     <form id="delete-form" method="post" action="/ideas/{{$idea->id}}">
         @method('DELETE')
         @csrf
