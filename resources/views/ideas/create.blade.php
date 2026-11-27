@@ -5,9 +5,8 @@
             <label for="idea" class="block text-sm/6 font-medium text-white">New Ideas</label>
             <div class="mt-2">
                 <textarea id="idea" name="idea" rows="3" class="block w-full rounded-md bg-white/5 px-3 text-white font-light"></textarea>
-                @error('description')
-                    <p class="text-red-600 text-xs mt-1">{{ $message }}</p>
-                @enderror
+
+                <x-error name="description"/>
             </div>
             <p class="mt-3 text-sm/6 text-gray-400">Write a few ideas to save for later.</p>
         </div>
