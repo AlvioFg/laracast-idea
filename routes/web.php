@@ -59,3 +59,6 @@ Route::delete('/ideas/{idea}', function (Idea $idea) {
 
     return redirect('/');
 });
+
+
+//dont forget to always check your endpoint
