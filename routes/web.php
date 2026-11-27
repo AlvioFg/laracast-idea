@@ -1,34 +1,27 @@
 <?php
 
+use App\Http\Controllers\IdeaController;
 use App\Models\Idea;
 use Illuminate\Support\Facades\Route;
 
 //index
-Route::get('/', function () {});
-
+Route::get('/', [IdeaController::class, 'index']);
 
 //create
-Route::get('/ideas/create', function () {});
+Route::get('/ideas/create', [IdeaController::class, 'create']);
 
 //store
-Route::post('/ideas', function () {});
-
+Route::post('ideas', [IdeaController::class, 'store']);
 
 //show
-Route::get('/ideas/{idea}', function (Idea $idea) {});
-
+Route::get('ideas/{idea}', [IdeaController::class, 'show']);
 
 //edit
-Route::get('/ideas/{idea}/edit', function (Idea $idea) {
-});
+Route::get('ideas/{idea}/edit', [IdeaController::class, 'edit']);
 
 //update
-Route::patch('/ideas/{idea}', function (Idea $idea) {});
-
-//store
-
+Route::patch('/ideas/{idea}', [IdeaController::class, 'update']);
 
 //destroy
-Route::delete('/ideas/{idea}', function (Idea $idea) {});
-
+Route::delete('/ideas/{idea}', [IdeaController::class, 'destroy']);
 
