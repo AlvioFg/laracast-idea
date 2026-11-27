@@ -1,26 +1,48 @@
 <?php
 
+use App\Models\Idea;
 use Illuminate\Support\Facades\Route;
 
+//index
 Route::get('/', function () {
+    $ideas = Idea::all();
 
-    $ideas = DB::table('ideas')->get();
-
-    return view('ideas', [
+    return view('ideas.ideas', [
         'ideas' => $ideas,
-        ]);
+    ]);
 });
 
-Route::post('/ideas', function (){
-    $idea = request('idea');
-
-    session()->push('ideas', $idea);
+Route::post('/ideas', function () {
+    Idea::create([
+        'description' => request('idea'),
+        'state' => 'pending',
+    ]);
 
     return redirect('/');
 });
 
-Route::get('/delete-ideas', function (){
-    session()->forget('ideas');
+
+//show
+Route::get('/ideas/{idea}', function (Idea $idea) {
+
+
+    return view('ideas.show', [
+        'idea' => $idea,
+    ]);
+});
+
+
+//edit
+Route::get('/ideas/{idea}/edit', function (Idea $idea) {
+
+
+    return view('ideas.show', [
+        'idea' => $idea,
+    ]);
+});
+
+Route::get('/delete-ideas', function () {
+    Idea::truncate();
 
     return redirect('/');
 });
