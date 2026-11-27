@@ -41,6 +41,7 @@ Route::get('/ideas/{idea}/edit', function (Idea $idea) {
     ]);
 });
 
+//update
 Route::patch('/ideas/{idea}', function (Idea $idea) {
     $idea->update([
        'description' => request('description'),
