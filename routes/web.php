@@ -36,7 +36,7 @@ Route::get('/ideas/{idea}', function (Idea $idea) {
 Route::get('/ideas/{idea}/edit', function (Idea $idea) {
 
 
-    return view('ideas.show', [
+    return view('ideas.edit', [
         'idea' => $idea,
     ]);
 });
