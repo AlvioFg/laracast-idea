@@ -21,7 +21,9 @@
 
         <ul class="mt-6">
             @foreach($ideas as $idea)
-                <li class="text-sm"> {{ $idea->description }} </li>
+                <li>
+                <a href="/ideas/{{$idea->id}}" class="text-sm"> {{ $idea->description}}</a>
+                </li>
             @endforeach
         </ul>
     </div>
