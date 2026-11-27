@@ -49,8 +49,13 @@ Route::patch('/ideas/{idea}', function (Idea $idea) {
     return redirect('/ideas/' . $idea->id);
 });
 
-Route::get('/delete-ideas', function () {
-    Idea::truncate();
+//store
+
+
+//destroy
+Route::delete('/ideas/{idea}', function (Idea $idea) {
+
+    $idea->delete();
 
     return redirect('/');
 });
