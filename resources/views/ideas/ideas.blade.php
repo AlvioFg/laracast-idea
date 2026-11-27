@@ -6,9 +6,15 @@
 
         <ul class="mt-6">
             @foreach($ideas as $idea)
-                <li>
-                <a href="/ideas/{{$idea->id}}" class="text-sm"> {{ $idea->description}}</a>
-                </li>
+                <div class="card bg-primary text-primary-content w-96">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title!</h2>
+                        <p><a href="/ideas/{{$idea->id}}" class="text-sm"> {{ $idea->description}}</a></p>
+                        <div class="card-actions justify-end">
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
             @endforeach
         </ul>
     </div>
