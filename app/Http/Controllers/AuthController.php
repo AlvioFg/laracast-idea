@@ -34,6 +34,30 @@ class AuthController extends Controller
         return redirect('/');
     }
 
+    public function login()
+    {
+        return view('auth.login');
+    }
+
+    public function authenticate(Request $request)
+    {
+        $validated = $request->validate([
+            'email' => 'required|string|email',
+            'password' => ['required', 'min:8', Password::default()],
+        ]);
+
+        if (Auth::attempt($validated)){
+            $request->session()->regenerate();
+
+            return redirect()->intended('/');
+        }
+
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ]);
+
+    }
+
     public function logout()
     {
         Auth::logout();

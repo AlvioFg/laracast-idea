@@ -26,9 +26,11 @@
             <li><a href="/ideas/create">New Idea</a></li>
         </ul>
     </div>
-    <div class="navbar-end">
+    <div class="navbar-end ">
         @guest()
-        <a href="/register" class="btn">Register</a>
+            <a href="/register" class="btn">Register</a>
+            <a href="/login" class="btn">Login</a>
+
         @endguest
 
         @auth()
