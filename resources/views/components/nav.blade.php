@@ -27,6 +27,6 @@
         </ul>
     </div>
     <div class="navbar-end">
-        <a href="/ideas/create" class="btn">Create</a>
+        <a href="/register" class="btn">Register</a>
     </div>
 </div>

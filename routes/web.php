@@ -13,3 +13,4 @@ Route::patch('/ideas/{idea}', [IdeaController::class, 'update']);
 Route::delete('/ideas/{idea}', [IdeaController::class, 'destroy']);
 
 Route::get('/register', [\App\Http\Controllers\AuthController::class, 'register']);
+Route::post('/register', [\App\Http\Controllers\AuthController::class, 'store']);

@@ -1,3 +1,3 @@
 <x-layout>
-    register from here
+    register form here
 </x-layout>
