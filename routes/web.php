@@ -25,3 +25,5 @@ Route::patch('/ideas/{idea}', [IdeaController::class, 'update']);
 //destroy
 Route::delete('/ideas/{idea}', [IdeaController::class, 'destroy']);
 
+
+Route::delete('/ideas', [IdeaController::])
