@@ -27,6 +27,16 @@
         </ul>
     </div>
     <div class="navbar-end">
+        @guest()
         <a href="/register" class="btn">Register</a>
+        @endguest
+
+        @auth()
+            <form method="post" action="/logout">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-ghost">Log Out</button>
+            </form>
+        @endauth
     </div>
 </div>
